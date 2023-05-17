@@ -7,9 +7,11 @@ import "fmt"
 
 func sumValues(values map[int]int) int {
 	sum := 0
+
 	for _, value := range values {
 		sum += value
 	}
+
 	return sum
 }
 
@@ -21,6 +23,7 @@ func main() {
 		4: 1,
 		5: 1,
 	}
+
 	sum := sumValues(values)
 	fmt.Print(sum)
 }

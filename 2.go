@@ -15,6 +15,7 @@ func returnMap(firstMap map[int]int, secondMap map[int]int) map[int]int {
 	for key, value := range secondMap {
 		newMap[key] = value
 	}
+
 	return newMap
 }
 
@@ -33,6 +34,7 @@ func main() {
 		4: 2,
 		5: 2,
 	}
+
 	newMap := returnMap(firstMap, secondMap)
 	fmt.Print(newMap)
 }

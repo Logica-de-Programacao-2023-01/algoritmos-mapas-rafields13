@@ -12,14 +12,17 @@ import (
 func wordsCounter(text string) map[string]int {
 	words := strings.Fields(text)
 	occurrences := make(map[string]int)
+
 	for _, word := range words {
 		occurrences[word]++
 	}
+
 	return occurrences
 }
 
 func main() {
 	text := "Hello, world!"
+
 	occurrences := wordsCounter(text)
 	fmt.Print(occurrences)
 }
